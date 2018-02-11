@@ -1,0 +1,8 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="activar_musica"
+        android:title="@string/activar_musica" />
+
+</PreferenceScreen>

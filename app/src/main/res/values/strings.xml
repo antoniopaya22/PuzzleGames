@@ -1,0 +1,208 @@
+<resources>
+    <string name="app_name">Puzzles Mentales</string>
+    <string name="title_activity_opciones">Opciones</string>
+
+    <string name="title_activity_nuevo_juego">Nuevo juego</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_new_game">NewGameActivity</string>
+    <string name="large_text"></string>
+    <string name="title_activity_sopa_letras">Sopa de letras</string>
+
+    <string-array name="sp_dificultad">
+        <item>Fácil</item>
+        <item>Media</item>
+        <item>Dificil</item>
+    </string-array>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+
+    <string name="edit_sudoku">Editar sudoku</string>
+
+    <string name="recordarModosEntrada">Recuerda que no tienes porque utilizar todos los modos
+        de entrada.
+	</string>
+    <string name="esoEsTodo">Eso es todo</string>
+    <string name="numpad">Pad numérico</string>
+    <string name="input_methods">Métodos de entrada</string>
+    <string name="popup">Ventana emergente</string>
+    <string name="popup_summary">Editar el valor y las anotaciones de cada celda en una ventana emergente.</string>
+    <string name="numpad_summary">Muestra un pad que actua como un teclado numérico estándar.</string>
+    <string name="numpad_move_right">Mover a la derecha</string>
+    <string name="numpad_move_right_summary">Mueve la seleccion de la celda una a la derecha cuando se presiona un botón.</string>
+    <string name="numpad_abbr">Pad</string>
+    <string name="popup_abbr">PopUp</string>
+
+    <string name="im_popup_hint">Ahora te encuentras en el modo de entrada de <i>ventana
+        emergente</i>. Toca en cualquier celda con el dedo para editar su
+        contenido.\n\nObserva el botón de la esquina inferior derecha. Puedes utilizar este botón
+        para cambiar a otro modo de entrada.\n
+	</string>
+    <string name="im_numpad_hint">Ahora te encuentras en el modo de entrada <i>teclado numérico</i>.
+        Los botones funcionan como un teclado numérico estándar.\n\nPresiona el <i>botón del
+        lápiz</i> para cambiar al modo de anotaciones.\n
+	</string>
+    <string name="numeroSeleccionado">Seleccionar número</string>
+    <string name="editarNota">Editar notas</string>
+    <string name="bienvenido">Bienvenido</string>
+    <string name="primeraVezRun">Existen varios modos de entrada que puedes utilizar para
+        rellenar los puzzles. Con el fin de ayudar a que te familiarices con estos modos habrá
+        varios consejos que aparecerán a medida que avanzas a traves de ellos.\n\nPuedes desactivar
+        estas sugerencias en la configuración del juego.\n
+	</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_menu_sudoku">MenuSudoku</string>
+
+    <string name="bt_jugar_meny">Jugar</string>
+    <string name="txtDificultad">Dificultad</string>
+    <string name="switchDificultadSudoku">Personalizar dificultad</string>
+    <string name="numeroHuecos">Número de huecos</string>
+    <string name="tiempoLim">Tiempo límite</string>
+    <string name="resolver">Resolver sudoku</string>
+    <string name="bt_leer_sopa">Leer sopa</string>
+    <string name="ajustes">Ajustes</string>
+    <string name="cantidadPalabras">Cantidad de palabras</string>
+
+    <string-array name="sp_huecos">
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+        <item>35</item>
+        <item>40</item>
+        <item>45</item>
+        <item>50</item>
+    </string-array>
+
+    <string name="felicidades">Felicidades, has resuelto el sudoku.</string>
+
+    <string name="desc_paso1">
+        Consigue papel y bolígrafo, un libro de sopa de letras o, incluso, un periódico
+        del que leer una sopa. En el caso en el que decidas crear la tuya propia en un
+        papel, se recomienda que este sea de color blanco, y el bolígrafo, a poder ser,
+        negro. Esto aumenta el contraste, y beneficia el procesamiento de la imagen.
+        IMPORTANTE: La sopa de letras <b>no está pensada para leer palabras en diagonal,
+        tildes, así como caracteres como <i>ñ o ll</i>.</b>
+    </string>
+
+    <string name="desc_paso2">
+        A continuación, apunta las palabras que aparecen en la sopa de letras justo
+        debajo de esta pestaña de los pasos, y pulsa "Añadir >" con cada una.
+        Mostraremos seguidamente algunos consejos que deberías seguir para mejorar
+        la calidad de tu imagen.
+    </string>
+
+    <string name="consejos">
+        - Acuérdate de escribir, a ser posible, con bolígrafo negro sobre fondo blanco.\n
+        - Saca la imagen lo más claramente posible. Esto es, sin sombras ni lados oscuros
+        en la imagen. Además, es OBLIGATORIO que la imagen sea VERTICAL.\n
+        - Cuando hayas sacado la imagen, recórtala de tal manera que lo único que se vea
+        sea la sopa.\n
+        - No uses caligrafía propia. A continuación, exponemos la fuente mejor <i>computable</i>
+        para nuestro procesador de imágenes:\n
+        A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+    </string>
+
+    <string name="desc_paso3">
+        Como ya hemos mencionado en el paso 2, deberás proporcionarnos la lista de palabras
+        a buscar en la sopa de letras. Puedes hacerlo antes y después de leer la sopa.
+        Además, si una vez puestas las palabras necesitas quitar alguna, puedes buscarla
+        en la lista de la derecha y tocar sobre ella para eliminarla. Todo lo que tendrás
+        que hacer después de esto es recargar o leer la sopa de nuevo.\n
+        Para seleccionar la imagen que contiene la sopa, simplemente pulsas en "Leer sopa". Se
+        mostrarán imágenes de tu galería. Selecciona la imagen que buscas.\n
+        Continua con el último paso para terminar.
+    </string>
+
+    <string name="desc_paso4">
+        Cuando selecciones una imagen de la galería, tardará unos segundos en procesarla.
+        En cualquier caso, no te preocupes: si el procesamientodura más de 20 segundos,
+        se cancelará automáticamente.\n
+        El resultado del procesamiento se mostrará en la pestaña "RESULTADO",
+        que puedes encontrar justo después de esta misma. Si la imagen no ha sido
+        suficientemente clara para nuestro procesador de imágenes, o sencillamente has puesto
+        cualquier tipo de imagen (o una sopa de letras con 7 letras en la primera fila, 2 en
+        la segunda, etc.), no podrás continuar.\n
+        Si todo ha salido perfecto, o bastante aceptable, podrás seleccionar la sopa de letras
+        que has creado.
+    </string>
+
+    <string-array name="cantidad_palabras">
+        <item>Pocas</item>
+        <item>Medias</item>
+        <item>Muchas</item>
+    </string-array>
+    <string-array name="tamano_sopa">
+        <item>Variados</item>
+        <item>Comidas</item>
+        <item>Deportes</item>
+        <item>Paises</item>
+        <item>Animales</item>
+    </string-array>
+    <string name="guardarSudoku">Guardar sudoku</string>
+    <string name="guardarSopa">Guardar sopa</string>
+    <string name="resolverSopa">Resolver sopa</string>
+    <string name="tamSopa">Temas</string>
+    <string name="opciones">Opciones</string>
+
+    <!-- Opciones -->
+    <string name="pref_header_general">General</string>
+    <string name="nombre_usuario">Nombre de usuario</string>
+    <string name="nombre_usuario_default">Usuario</string>
+
+    <string name="preguntarsalir">Preguntar al salir</string>
+    <string-array name="preguntar_al_salir">
+        <item>Siempre</item>
+        <item>Nunca</item>
+    </string-array>
+    <string-array name="preguntar_val">
+        <item>0</item>
+        <item>2</item>
+    </string-array>
+
+    <string name="pref_header_sync">Sincronización</string>
+
+    <string name="pref_sync_fec">Frecuencia sincronización</string>
+    <string-array name="pref_sync_frec_tiempo">
+        <item>15 minutos</item>
+        <item>30 minutos</item>
+        <item>1 hora</item>
+        <item>3 horas</item>
+        <item>6 horas</item>
+        <item>Nunca</item>
+    </string-array>
+    <string-array name="pref_sync_frec_val">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string name="pref_sync_ajustes">Ajustes cuentas sincronización</string>
+
+    <string name="pref_header_musica">Musica</string>
+
+    <string name="activar_musica">Activar música</string>
+
+    <string name="npuntos">Ver Nº Puntos</string>
+    <string name="sobrePuntos">Acerca de los puntos</string>
+    <string name="pararIniciarMusica">Iniciar/Parar Musica</string>
+    <string name="txNuevoJuego_sudoku">Tablero de 9x9 (dividido en subtableros de 3x3),
+        donde el jugador tendrá que colocar números del 1 al 9,
+        de tal forma que no haya ninguno ya colocado en la horizontal ni en la vertical
+    </string>
+
+    <string name="txNuevoJuego_sopa">Conjunto de letras desordenadas, donde el jugador
+        tendrá que encontrar determinadas palabras ocultas relacionadas con un tema en concreto
+    </string>
+    <string name="txContinuar_NuevoJuego">Pulse en la flecha para ir a la configuración del juego</string>
+    <string name="txNuevoJuego_SopaSeleccionada">Se ha seleccionado la sopa de letras. Clique en la flecha para continuar</string>
+    <string name="txNuevoJuego_SudokuSeleccionado">Se ha seleccionado el sudoku. Clique en la flecha para continuar</string>
+    <string name="txNuevoJuego_Continuar_Defecto">Para continuar, seleccione un juego</string>
+</resources>

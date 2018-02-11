@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.pablod.aplicacion.activities.SudokuConfigActivity">
+    <item
+        android:id="@+id/ajustes_sudoku_menu"
+        android:orderInCategory="100"
+        android:title="@string/sobrePuntos"
+        app:showAsAction="never" />
+</menu>

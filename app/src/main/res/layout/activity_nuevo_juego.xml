@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="15dp"
+    android:paddingEnd="15dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    app:layout_collapseParallaxMultiplier="1.0"
+    tools:context="com.puzzlesmentales.igu.NuevoJuegoActivity"
+    android:background="@drawable/fondo">
+
+    <LinearLayout
+        android:id="@+id/layoutSudoku"
+        android:layout_width="0dp"
+        android:layout_height="165dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="16dp"
+        android:onClick="juegoSeleccionado"
+        android:orientation="horizontal"
+        android:paddingEnd="30dp"
+        android:paddingStart="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/imagenSudoku"
+            android:layout_width="120dp"
+            android:layout_height="116dp"
+            android:layout_marginBottom="120dp"
+            android:contentDescription="Imagen sudoku" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txTituloSudoku"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/background_dark"
+                android:text="Sudoku"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp" />
+
+            <View
+                android:id="@+id/lineaHorizontal_sudoku"
+                android:layout_width="fill_parent"
+                android:layout_height="3dp"
+                android:background="#000" />  <!-- Línea separadora -->
+
+            <ScrollView
+                android:id="@+id/scrollSudoku"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txDescripcionSudoku"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="0.22"
+                        android:onClick="juegoSeleccionado"
+                        android:text="Descripción sudoku"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutSopa"
+        android:layout_width="0dp"
+        android:layout_height="158dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="16dp"
+        android:onClick="juegoSeleccionado"
+        android:orientation="horizontal"
+        android:paddingEnd="30dp"
+        android:paddingStart="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutSudoku"
+        app:layout_constraintVertical_bias="0.004">
+
+        <ImageView
+            android:id="@+id/imagenSopa"
+            android:layout_width="120dp"
+            android:layout_height="103dp"
+            android:contentDescription="Imagen sopa" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txTituloSopa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/background_dark"
+                android:text="Sopa de letras"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp" />
+
+            <View
+                android:id="@+id/lineaHorizontal_sopa"
+                android:layout_width="fill_parent"
+                android:layout_height="3dp"
+                android:background="#000" />
+
+            <ScrollView
+                android:id="@+id/scrollSopa"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txDescripcionSopa"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="0.22"
+                        android:onClick="juegoSeleccionado"
+                        android:text="Descripción sopa"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutBotones"
+        android:layout_width="wrap_content"
+        android:layout_height="78dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutSopa"
+        app:layout_constraintVertical_bias="0.411">
+
+        <TextView
+            android:id="@+id/txContinuarONo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingStart="10dp"
+            android:paddingTop="6dp"
+            android:text="Habilitado para continuar o no"
+            android:textAlignment="center"
+            android:textColor="#ef4f4f"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="39dp"
+            tools:layout_editor_absoluteY="449dp" />
+
+        <ImageButton
+            android:id="@+id/btContinuar"
+            style="@android:style/Widget.DeviceDefault.ImageButton"
+            android:layout_width="96dp"
+            android:layout_height="46dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:clickable="false"
+            android:contentDescription="Imagen continuar"
+            android:onClick="onClickJuegoSeleccionado"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.924"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layoutSopa"
+            app:layout_constraintVertical_bias="0.619"
+            app:srcCompat="@drawable/comenzar_juego" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
+

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal">
+
+        <com.puzzlesmentales.igu.sudoku.TableroSudokuView
+            android:id="@+id/tablero"
+            android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+            android:keepScreenOn="true" />
+
+		<com.puzzlesmentales.igu.sudoku.input.PanelControl
+            android:id="@+id/metodosEntrada"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+		</com.puzzlesmentales.igu.sudoku.input.PanelControl>
+
+	</LinearLayout>
+
+	<TextView
+		android:id="@+id/labelTiempo"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:background="#77333333"
+		android:textColor="#FFFFFFFF" />
+
+</RelativeLayout>
